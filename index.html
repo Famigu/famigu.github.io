@@ -1,90 +1,197 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name='description' content='FAMIGU plantas'>
-    <meta property="og:description"
-        content="FAMIGU Plantas, uma empresa a sua disposição para entregar plantas, flores de vários tipos, tamanhos, espécies e idades. Você pode comprar e fazer sua retirada conosco, entre em contato e faça um orçamento">
-    <meta property="og:image" content="img/famigu-redondo.png" alt="FAMIGU Plantas - compartilhamento" />
-    <meta property="og:site_name" content="FAMIGU Plantas" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name='description' content='FAMIGU Plantas - Produtores de plantas ornamentais em Corupá, SC. Palmeiras, cactos, suculentas e mais. Qualidade e variedade para seu jardim.'>
+    <meta name="keywords" content="plantas ornamentais, palmeiras, cactos, suculentas, jardinagem, Corupá SC, Jaraguá do Sul, plantas decorativas, mudas, floricultura, costela de adão, fênix, primavera, espada de são jorge">
+    <meta name="author" content="FAMIGU Plantas">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://famigu.github.io" />
+    <meta property="og:title" content="FAMIGU Plantas - Plantas Ornamentais em Corupá, SC" />
+    <meta property="og:description" content="Produtores de plantas ornamentais de alta qualidade. Palmeiras, cactos, suculentas e muito mais. Entre em contato e faça seu orçamento!" />
+    <meta property="og:image" content="https://famigu.github.io/img/famigu-redondo.png" />
+    <meta property="og:site_name" content="FAMIGU Plantas" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAMIGU Plantas - Plantas Ornamentais">
+    <meta name="twitter:description" content="Produtores de plantas ornamentais em Corupá, SC. Qualidade e variedade!">
+    <meta name="twitter:image" content="https://famigu.github.io/img/famigu-redondo.png">
+    
+    <!-- Canonical & Favicon -->
     <link rel="canonical" href="https://famigu.github.io" />
-    <link rel="icon" href="img/famigu-icon.png" alt="ícone">
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="img/famigu-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/famigu-icon.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#21bd13">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <title>FAMIGU Plantas</title>
-    <meta name="keywords"
-        content="jaragua do sul, plantas jaragua do sul, plantas em jaragua do sul, comprar cica, comprar plameira, comprar primavera, comprar pandalus , comprar espada de sao jorge, comprar cactus, plantas em Corupá, plantas em São Bento, plantas em Jaraguá, comprar plantas em corupá, floricultura em corupá, floricultura em Jaraguá, comprar fenix, comprar yuca, comprar guaimbe, mudas em corupa, mudas em jaragua do sul, mudas em sao bento do sul, matriz de mudas, produtor de mudas, vender mudas, comprar mudas de plantas, comprar fenix pequeno" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>FAMIGU Plantas - Plantas Ornamentais em Corupá, SC</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    
+    <!-- Bing Webmaster -->
     <meta name="msvalidate.01" content="F5C551C830118EA4D6E04F5BE8F12870" />
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-27TQ1Z4082"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-27TQ1Z4082');
     </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-        <a class="navbar-brand" href="#">
-            <img src="img/famigu-largo.png" style="height:70px" alt="Logo Famigu">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Navbar moderna com efeito de vidro -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-glass">
+        <div class="container">
+            <a class="navbar-brand" href="#" aria-label="FAMIGU Plantas - Página inicial">
+                <img src="img/famigu-largo.png" alt="Logo FAMIGU Plantas" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto textoPequeno">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#produtos">Produtos</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link active" href="#sobre">Sobre</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link active" href="#contato">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#local">Onde estamos?</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">
+                            <i class="fas fa-leaf"></i> Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">
+                            <i class="fas fa-envelope"></i> Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#local">
+                            <i class="fas fa-map-marker-alt"></i> Localização
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-whatsapp" href="https://api.whatsapp.com/send?phone=554792230888&text=Ol%C3%A1%2C%20peguei%20seu%20n%C3%BAmero%20atrav%C3%A9s%20do%20cat%C3%A1logo%20online.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section class="d-none d-sm-block">
-        <div class="jumbotron capa">
-            <div class="container" style="margin-top: 10%; margin-bottom: 5%">
-                <div class="text-left">
-                    <img class="col-xs-12 ml-auto" src="img/famigu-redondo.png"
-                        style="width: auto; height: 270px; max-width: 100%; max-height: 100%;" alt="FAMIGU plantas">
+    <!-- Hero Section Moderna -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 col-md-12 text-center text-lg-left hero-content">
+                    <div class="fade-in-up">
+                        <h1 class="hero-title">FAMIGU Plantas</h1>
+                        <p class="hero-subtitle">Transforme seu espaço com nossas plantas ornamentais de alta qualidade</p>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <i class="fas fa-seedling"></i>
+                                <span>Produção Própria</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-award"></i>
+                                <span>Alta Qualidade</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Retirada no Local</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#produtos" class="btn btn-primary-custom btn-lg">
+                                <i class="fas fa-leaf"></i> Ver Produtos
+                            </a>
+                            <a href="#contato" class="btn btn-outline-custom btn-lg">
+                                <i class="fas fa-envelope"></i> Fazer Orçamento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image-container fade-in-right">
+                        <img src="img/famigu-redondo.png" alt="FAMIGU Plantas" class="hero-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <a href="#produtos" aria-label="Rolar para produtos">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de Diferenciais -->
+    <section class="benefits-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Variedade</h3>
+                        <p>Ampla seleção de plantas ornamentais para todos os gostos e ambientes</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Cuidado</h3>
+                        <p>Plantas cultivadas com dedicação e expertise em nossa produção própria</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Preço Justo</h3>
+                        <p>Direto do produtor, sem intermediários, melhor custo-benefício</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Atendimento</h3>
+                        <p>Suporte completo e orientações para cuidar das suas plantas</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="d-block d-sm-none">
-        <div class="jumbotron capa">
-            <div class="container" style="margin-top: 25%; margin-bottom: 10%">
-                <div class="text-center">
-                    <img class="col-xs-12" src="img/famigu-redondo.png"
-                        style="width: auto; height: auto; max-width: 100%; max-height: 100%" alt="FAMIGU plantas">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="produtos"></div><br><br>
+    <div id="produtos"></div>
     <section class="container mb-5">
         <div class="text-center">
             <h1 class="titulos d-none d-md-block">NOSSOS PRODUTOS</h1>
