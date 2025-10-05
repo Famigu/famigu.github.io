@@ -697,13 +697,14 @@ iframe {
 
 .footer-logo {
     height: 120px;
-    filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(33, 189, 19, 0.3));
+    width: auto;
+    display: block;
+    margin: 0 auto;
     transition: var(--transition-medium);
 }
 
 .footer-logo:hover {
-    transform: scale(1.05) rotate(5deg);
-    filter: brightness(0) invert(1) drop-shadow(0 0 30px rgba(33, 189, 19, 0.5));
+    transform: scale(1.05);
 }
 
 .footer-text {
