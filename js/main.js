@@ -318,3 +318,83 @@ if ('IntersectionObserver' in window) {
    CONTADOR DE CARACTERES (OPCIONAL)
    ============================================= */
 console.log('🌿 FAMIGU Plantas - Site carregado com sucesso!');
+
+/* =============================================
+   LIGHTBOX PARA GALERIA
+   ============================================= */
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    // Criar modal lightbox
+    const lightboxHTML = `
+        <div id="lightbox" class="lightbox" style="display: none;">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-prev">❮</button>
+            <button class="lightbox-next">❯</button>
+        </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+    
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    
+    let currentIndex = 0;
+    const images = Array.from(galleryItems).map(item => ({
+        src: item.querySelector('img').src,
+        alt: item.querySelector('img').alt
+    }));
+    
+    function showImage(index) {
+        currentIndex = index;
+        lightboxImg.src = images[index].src;
+        lightboxCaption.textContent = images[index].alt;
+        lightbox.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function hideImage() {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    
+    function showNext() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+    
+    function showPrev() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
+    
+    // Event listeners
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => showImage(index));
+    });
+    
+    closeBtn.addEventListener('click', hideImage);
+    nextBtn.addEventListener('click', showNext);
+    prevBtn.addEventListener('click', showPrev);
+    
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            hideImage();
+        }
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'block') {
+            if (e.key === 'Escape') hideImage();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        }
+    });
+});
