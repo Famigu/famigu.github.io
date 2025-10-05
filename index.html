@@ -598,223 +598,195 @@
 
     <div id="sobre"></div><br><br>
 
-    <div id="contato"></div><br><br>
-    <section>
-        <div class="container textoPequeno d-none d-lg-block">
+    <div id="contato"></div>
+    <section class="contact-section py-5">
+        <div class="container">
             <div class="text-center mb-5">
-                <h2 class="titulos">CONTATO</h2>
+                <h2 class="titulos">ENTRE EM CONTATO</h2>
+                <p class="textoPequeno mt-3" style="max-width: 700px; margin: 0 auto;">
+                    Estamos prontos para atender você! Entre em contato e faça seu orçamento sem compromisso.
+                </p>
             </div>
+
+            <div class="row mb-5">
+                <!-- Cards de Contato -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>E-mail</h4>
+                        <p>Envie sua mensagem</p>
+                        <a href="mailto:famiguplantas@gmail.com.br?cc=matheusquost@gmail.com&subject=Contato%20atrav%C3%A9s%20do%20cat%C3%A1logo%20online&body=Ol%C3%A1%2C%0A%0AEu%20peguei%20este%20e-mail%20atrav%C3%A9s%20da%20%C3%A1rea%20de%20contatos%20do%20cat%C3%A1logo%20online%20(site)%2C%20Gostaria%20de%20pedir%20maiores%20informa%C3%A7%C3%B5es." class="contact-link">
+                            famiguplantas@gmail.com.br
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p>Atendimento rápido</p>
+                        <a href="https://api.whatsapp.com/send?phone=5547992897179&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20FAMIGU%20Plantas.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="contact-link">
+                            (47) 99289-7179
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon location">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Horário de Atendimento</h4>
+                        <p>Segunda a Sexta</p>
+                        <div class="contact-link" style="cursor: default;">
+                            08:00 às 18:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário de Contato -->
             <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <img src="img/icones/mail.png" style="height: 60px; padding-left: 55%; margin-top: 8px"
-                                alt="Email ícone">
-                        </div>
-                        <div class="col">
-                            <div class="mt-4"><a
-                                    href="mailto:famiguplantas@gmail.com.br?cc=matheusquost@gmail.com&subject=Contato%20atrav%C3%A9s%20do%20cat%C3%A1logo%20online&body=Ol%C3%A1%2C%0A%0AEu%20peguei%20este%20e-mail%20atrav%C3%A9s%20da%20%C3%A1rea%20de%20contatos%20do%20cat%C3%A1logo%20online%20(site)%2C%20Gostaria%20de%20pedir%20maiores%20informa%C3%A7%C3%B5es."
-                                    style="text-decoration: none">famiguplantas@gmail.com.br</a></div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <img src="img/icones/whats.png" style="height: 60px; padding-left: 55%; margin-top: 8px"
-                                alt="Whatsapp Logo">
-                        </div>
-                        <div class="col">
-                            <div class="mt-4"><a
-                                    href="https://api.whatsapp.com/send?phone=5547992897179&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20FAMIGU%20Plantas.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento."
-                                    style="text-decoration: none">(47) 99289-7179</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="textoPequeno text-center mb-4">
-                        Peça um orçamento agora mesmo!
-                    </div>
-                    <div class="col-sm-12 textoPequeno">
-                        <form id="contactForm" action="https://formspree.io/f/xbjqqljq" method="POST">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">E-mail</label>
-                                <input name="Email" type="email" class="form-control" id="emailDesk"
-                                    aria-describedby="emailHelp" onblur="validaEmailDesk()">
-                                <small><span class="helper-text mb-2" id="avisoEmailDesk"></span></small>
+                <div class="col-12">
+                    <div class="contact-form-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="form-header">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <h3>Solicite um Orçamento</h3>
+                                    <p>Preencha o formulário e retornaremos em breve!</p>
+                                </div>
+                                <div class="contact-info-list">
+                                    <div class="info-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Resposta rápida e personalizada</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Orçamento sem compromisso</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Atendimento especializado</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Orientação sobre cuidados</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Nome</label>
-                                <input name="Nome" type="text" class="form-control" id="nomeDesk"
-                                    onblur="validaNomeDesk()">
-                                <small><span class="helper-text mb-2" id="avisoNomeDesk"></span></small>
+                            <div class="col-lg-6">
+                                <form id="contactForm" action="https://formspree.io/f/xbjqqljq" method="POST" class="contact-form">
+                                    <div class="form-group">
+                                        <label for="emailDesk"><i class="fas fa-user"></i> Nome Completo</label>
+                                        <input name="Nome" type="text" class="form-control" id="nomeDesk" placeholder="Digite seu nome" onblur="validaNomeDesk()" required>
+                                        <small><span class="helper-text" id="avisoNomeDesk"></span></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailDesk"><i class="fas fa-envelope"></i> E-mail</label>
+                                        <input name="Email" type="email" class="form-control" id="emailDesk" placeholder="seu@email.com" aria-describedby="emailHelp" onblur="validaEmailDesk()" required>
+                                        <small><span class="helper-text" id="avisoEmailDesk"></span></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="foneDesk"><i class="fas fa-phone"></i> Telefone / WhatsApp</label>
+                                        <input name="Telefone" type="text" class="form-control" id="foneDesk" placeholder="(47) 99999-9999" onblur="validaTelefoneDesk()" required>
+                                        <small><span class="helper-text" id="avisoFoneDesk"></span></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mensagemDesk"><i class="fas fa-comment-dots"></i> Sua Mensagem</label>
+                                        <textarea name="Mensagem" class="form-control" id="mensagemDesk" rows="4" placeholder="Conte-nos sobre o que você precisa..." onblur="validaMensagemDesk()" required></textarea>
+                                        <small><span class="helper-text" id="avisoMensagemDesk"></span></small>
+                                    </div>
+                                    <button id="send_email" class="btn btn-primary-custom btn-block btn-lg" type="submit">
+                                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                                    </button>
+                                    <small><span class="helper-text" id="message"></span></small>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Telefone</label>
-                                <input name="Telefone" type="text" class="form-control" id="foneDesk"
-                                    onblur="validaTelefoneDesk()">
-                                <small><span class="helper-text mb-2" id="avisoFoneDesk"></span></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Como podemos ajudar?</label>
-                                <textarea name="Mensagem" class="form-control" id="mensagemDesk" rows="3"
-                                    onblur="validaMensagemDesk()"></textarea>
-                                <small><span class="helper-text mb-2" id="avisoMensagemDesk"></span></small>
-                            </div>
-                            <button id="send_email" class="buttonEnviar" type="submit">Enviar</button>
-                            <small><span class="helper-text mb-4" id="message"></span></small>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container textoPequenoContato mb-5 d-lg-none">
-            <div class="text-center mb-5">
-                <h2 class="titulosMobile">CONTATO</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mb-4">
-                    <div class="row mb-2 offset-md-2">
-                        <div class="col-2">
-                            <img class="" src="img/icones/mail.png"
-                                style="height: 45px; padding-left: 30%; margin-top: 8px" alt="Email">
                         </div>
-                        <div class="col mb-4 text-left">
-                            <div class="mt-3"><a
-                                    href="mailto:famiguplantas@gmail.com.br?cc=matheusquost@gmail.com&subject=Contato%20atrav%C3%A9s%20do%20cat%C3%A1logo%20online&body=Ol%C3%A1%2C%0A%0AEu%20peguei%20este%20e-mail%20atrav%C3%A9s%20da%20%C3%A1rea%20de%20contatos%20do%20cat%C3%A1logo%20online%20(site)%2C%20Gostaria%20de%20pedir%20maiores%20informa%C3%A7%C3%B5es."
-                                    style="text-decoration: none">famiguplantas@gmail.com.br</a></div>
-                        </div>
-                    </div>
-                    <div class="row mb-2 offset-md-2">
-                        <div class="col-2">
-                            <img class="" src="img/icones/whats.png"
-                                style="height: 45px; padding-left: 30%; margin-top: 8px" alt="Whats">
-                        </div>
-                        <div class="col mb-4 text-left">
-                            <div class="mt-3"><a
-                                    href="https://api.whatsapp.com/send?phone=5547992897179&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20FAMIGU%20Plantas.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento."
-                                    style="text-decoration: none">(47) 99289-7179</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="textoPequeno text-center mb-4">
-                        Peça um orçamento agora mesmo!
-                    </div>
-                    <div class="col-sm-12 textoPequeno">
-                        <form id="contactFormMobile" action="https://formspree.io/f/xbjqqljq" method="POST">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">E-mail</label>
-                                <input name="Email" type="email" class="form-control" id="emailMobile"
-                                    aria-describedby="emailHelp" onblur="validaEmailMobile()">
-                                <small><span class="helper-text mb-2" id="avisoEmailMobile"></span></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Nome</label>
-                                <input name="Nome" type="text" class="form-control" id="nomeMobile"
-                                    onblur="validaNomeMobile()">
-                                <small><span class="helper-text mb-2" id="avisoNomeMobile"></span></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Telefone</label>
-                                <input name="Telefone" type="text" class="form-control" id="foneMobile"
-                                    onblur="validaTelefoneMobile()">
-                                <small><span class="helper-text mb-2" id="avisoFoneMobile"></span></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Como podemos ajudar?</label>
-                                <textarea name="Mensagem" class="form-control" id="mensagemMobile" rows="3"
-                                    onblur="validaMensagemMobile()"></textarea>
-                                <small><span class="helper-text mb-2" id="avisoMensagemMobile"></span></small>
-                            </div>
-                            <!-- <button type="submit" class="btn btn-success float-right" >Enviar</button> -->
-                            <button id="send_email_mobile" class="buttonEnviar" type="submit">Enviar</button>
-                            <small><span class="helper-text mb-4" id="messageMobile"></span></small>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="local"></div><br><br>
-    <section>
-        <div class="container mb-5 d-none d-lg-block">
+    <div id="local"></div>
+    <section class="location-section py-5">
+        <div class="container">
             <div class="text-center mb-5">
-                <h2 class="titulos">ONDE FICA A FAMIGU?</h2>
+                <h2 class="titulos">ONDE ESTAMOS</h2>
+                <p class="textoPequeno mt-3" style="max-width: 700px; margin: 0 auto;">
+                    Visite-nos em Corupá, SC. Estamos prontos para atendê-lo!
+                </p>
             </div>
-            <div class="textoPequeno">
-                <div class="row mb-4">
-                    <div class="col-3 text-right">
-                        <img src="img/icones/rua.png" style="height: 50px; margin-top: 15px" alt="Local">
-                    </div>
-                    <div class="col-9">
-                        R. Otto Hilbrecht, 2020<br>
-                        Bomplandt, CEP: 89.278-000<br>
-                        Corupá - Santa Catarina
+
+            <div class="row mb-4">
+                <div class="col-lg-6 mb-4">
+                    <div class="location-info-box">
+                        <div class="info-icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h5>Nosso Endereço</h5>
+                            <p class="address-text">R. Otto Hilbrecht, 2020</p>
+                            <p class="address-detail">Bomplandt, CEP: 89.278-000</p>
+                            <p class="address-detail">Corupá - Santa Catarina</p>
+                            <a href="https://www.google.com/maps/dir//R.+Otto+Hillbrecht,+2020+-+Bomplandt,+Corup%C3%A1+-+SC,+89278-000" 
+                               target="_blank" 
+                               rel="noopener" 
+                               class="location-link">
+                                <i class="fas fa-directions"></i> Como Chegar
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <div class="col-3 text-right">
-                        <img src="img/icones/hora.png" style="height: 60px" alt="Horários">
-                    </div>
-                    <div class="col-9 mt-1">
-                        Trabalhamos de segunda à sexta <br>
-                        das 08:00 às 18:00
+                <div class="col-lg-6 mb-4">
+                    <div class="location-info-box">
+                        <div class="info-icon-wrapper schedule-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h5>Horário de Atendimento</h5>
+                            <div class="schedule-row">
+                                <span class="day-label">Segunda a Sexta</span>
+                                <span class="hour-label">08:00 - 18:00</span>
+                            </div>
+                            <div class="schedule-row closed">
+                                <span class="day-label">Sábado e Domingo</span>
+                                <span class="hour-label">Fechado</span>
+                            </div>
+                            <div class="schedule-note">
+                                <i class="fas fa-info-circle"></i>
+                                Retirada no local mediante agendamento
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="text-center">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.537294360031!2d-49.25514548780807!3d-26.406132472134487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de8599f2e393d3%3A0xa21c06d9fc190e1f!2sR.%20Otto%20Hillbrecht%2C%202020%20-%20Bomplandt%2C%20Corup%C3%A1%20-%20SC%2C%2089278-000!5e0!3m2!1spt-BR!2sbr!4v1759639427759!5m2!1spt-BR!2sbr" 
-                        width="80%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-        <div class="container mb-5 d-lg-none">
-            <div class="text-center mb-5">
-                <h2 class="titulosMobile">ONDE FICA A FAMIGU?</h2>
-            </div>
-            <div class="row textoPequeno">
+            <!-- Mapa -->
+            <div class="row">
                 <div class="col-12">
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <img src="img/icones/rua.png" style="height: 50px; padding-left: 55%; margin-top: 20px"
-                                alt="rua">
-                        </div>
-                        <div class="col">
-                            R. Otto Hilbrecht, 2020<br>
-                            Bomplandt, CEP: 89.278-000<br>
-                            Corupá - Santa Catarina
-                        </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.537294360031!2d-49.25514548780807!3d-26.406132472134487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de8599f2e393d3%3A0xa21c06d9fc190e1f!2sR.%20Otto%20Hillbrecht%2C%202020%20-%20Bomplandt%2C%20Corup%C3%A1%20-%20SC%2C%2089278-000!5e0!3m2!1spt-BR!2sbr!4v1759639427759!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de localização FAMIGU Plantas">
+                        </iframe>
                     </div>
-
-                    <div class="row mb-4">
-                        <div class="col-3">
-                            <img src="img/icones/hora.png" style="height: 50px; padding-left: 55%; margin-top: 0px"
-                                alt="horas">
-                        </div>
-                        <div class="col">
-                            Aberto de segunda à sexta <br>
-                            das 08:00 às 18:00
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.537294360031!2d-49.25514548780807!3d-26.406132472134487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de8599f2e393d3%3A0xa21c06d9fc190e1f!2sR.%20Otto%20Hillbrecht%2C%202020%20-%20Bomplandt%2C%20Corup%C3%A1%20-%20SC%2C%2089278-000!5e0!3m2!1spt-BR!2sbr!4v1759639427759!5m2!1spt-BR!2sbr" 
-                        width="100%" 
-                        height="250" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </div>
             </div>
         </div>
