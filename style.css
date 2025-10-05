@@ -1129,6 +1129,7 @@ a:focus {
         rgba(33, 189, 19, 0.9) 0%, 
         rgba(45, 80, 22, 0.9) 100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -1148,6 +1149,29 @@ a:focus {
 
 .gallery-item:hover .gallery-overlay i {
     transform: scale(1);
+}
+
+.product-info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.product-info h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.9;
 }
 
 /* =================================
