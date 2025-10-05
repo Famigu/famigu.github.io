@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://famigu.github.io/sitemap.xml
